@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="checkdone" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="250.0" styleClass="logintextfieldM1" stylesheets="@../boss/login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.staff.ReviewedChequeCard">
+   <children>
+      <Label fx:id="checknumber" alignment="CENTER" layoutX="15.0" layoutY="26.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="check number" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="checkamount" alignment="CENTER" layoutX="15.0" layoutY="90.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="check amount" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="recipentnname" alignment="CENTER" layoutX="15.0" layoutY="155.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="recipent name" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="duedate" alignment="CENTER" layoutX="12.0" layoutY="219.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="due date" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nowdate" alignment="CENTER" layoutX="15.0" layoutY="284.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text=" date" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" alignment="CENTER" layoutX="15.0" layoutY="349.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="check status" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="11.0" text="check number" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="75.0" text="check amount" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="139.0" text="reciepent" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="203.0" text="due date" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="268.0" text="date" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="333.0" text="status" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

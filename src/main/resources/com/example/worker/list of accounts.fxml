@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #1F2F33;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.staff.AccountListController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #1F2F33;">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" layoutY="42.0" prefHeight="658.0" prefWidth="900.0" style="-fx-background-color: transparent;">
+               <content>
+                  <TableView fx:id="tableView" prefHeight="691.0" prefWidth="886.0" styleClass="my-table" stylesheets="@login.css">
+                     <columns>
+                        <TableColumn fx:id="fullname" prefWidth="162.40001529455185" style="-fx-fill: #1f2f33;" text="account holder name" />
+                        <TableColumn fx:id="accountnum" prefWidth="166.3999481201172" style="-fx-fill: #1f2f33;" text="account number" />
+                        <TableColumn fx:id="balance" prefWidth="188.80007934570312" style="-fx-fill: #1f2f33;" text="account balance" />
+                        <TableColumn fx:id="birthgendermarital" prefWidth="187.19989013671875" style="-fx-fill: #1f2f33;" text="birth-gender-marital" />
+                        <TableColumn fx:id="type" prefWidth="191.20013427734375" style="-fx-fill: #1f2f33;" text="account type" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Label layoutX="343.0" layoutY="7.0" prefHeight="30.0" prefWidth="230.0" text="Accounts list" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="5.0" layoutY="4.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="82.0" styleClass="loginbtn" stylesheets="@login.css" text="back">
+               <font>
+                  <Font name="AzonixRegular" size="17.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</StackPane>

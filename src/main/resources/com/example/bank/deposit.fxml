@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.customer.OpenDepositController">
+   <children>
+      <AnchorPane fx:id="create" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css">
+         <children>
+            <Label layoutX="274.0" layoutY="55.0" text="creating new deposit" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="367.0" layoutY="117.0" text="deposit type" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="shortd" layoutX="71.0" layoutY="239.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="258.0" styleClass="loginbtn" stylesheets="@login.css" text="short term deposit" />
+            <Button fx:id="longd" layoutX="71.0" layoutY="339.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="258.0" styleClass="loginbtn" stylesheets="@login.css" text="long term deposit" />
+            <Button fx:id="foreignd" layoutX="71.0" layoutY="439.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="foreign currency deposit" />
+            <Button fx:id="intrestfreed" layoutX="71.0" layoutY="539.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="258.0" styleClass="loginbtn" stylesheets="@login.css" text="intrest free deposit" />
+            <Label layoutX="367.0" layoutY="250.0" text="for less than a year , interest rate :  5% to 12%" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="367.0" layoutY="350.0" text=" for a year or more , interest rate : 10% to 20%" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="367.0" layoutY="449.0" prefHeight="18.0" prefWidth="558.0" text="it depends on type of currency , interest rate :  1% to 5% " textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="367.0" layoutY="549.0" text="no interest rate" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="backtomenu" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" styleClass="loginbtn" stylesheets="@login.css" text="back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="shortterm" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <Label layoutX="231.0" layoutY="30.0" text="opening short term deposit" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="158.0" text="deposit amount" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="shortamount" layoutX="266.0" layoutY="147.0" prefHeight="40.0" prefWidth="320.0" promptText="minimum 1,000,000 irr" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="90.0" layoutY="230.0" text="deposit duration" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="onemonthshort" layoutX="284.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="1 month" />
+            <Button fx:id="threemonthshort" layoutX="380.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="3 month" />
+            <Button fx:id="sixmonthshort" layoutX="481.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="6 month" />
+            <Button fx:id="oneyearshort" layoutX="583.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text=" 1 year" />
+            <Label layoutX="90.0" layoutY="298.0" text="deposit interest rate(depends on deposite duration)" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="600.0" layoutY="287.0" prefHeight="40.0" prefWidth="64.0" styleClass="firstpage" stylesheets="@login.css">
+               <children>
+                  <Label fx:id="shortinterest" layoutX="10.0" layoutY="12.0" text="x %">
+                     <font>
+                        <Font name="AzonixRegular" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="90.0" layoutY="357.0" text="deposit interest payment method" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="shortonemonthinterest" layoutX="426.0" layoutY="352.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="1 month" />
+            <Button fx:id="shortthreemonthinterest" layoutX="527.0" layoutY="352.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="3 month" />
+            <Button fx:id="shortoneyearinterest" layoutX="632.0" layoutY="352.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text=" 1 year" />
+            <Hyperlink fx:id="shortterms" layoutX="90.0" layoutY="516.0" text="terms an conditions">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <CheckBox fx:id="shortaccept" layoutX="95.0" layoutY="561.0" mnemonicParsing="false" text="i accept all terms an conditions" textFill="#fffcfc">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="shortdone" layoutX="344.0" layoutY="601.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="done" />
+            <Hyperlink fx:id="shortearly" layoutX="90.0" layoutY="480.0" text="early withdrawal terms">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <CheckBox layoutX="90.0" layoutY="407.0" mnemonicParsing="false" text="automatic renewal" textFill="#fffcfc">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="back1" layoutX="10.0" layoutY="7.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" styleClass="loginbtn" stylesheets="@login.css" text="back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="longterm" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css">
+         <children>
+            <Label layoutX="231.0" layoutY="30.0" text="opening long term deposit" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="158.0" text="deposit amount" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="longamount" layoutX="266.0" layoutY="147.0" prefHeight="40.0" prefWidth="320.0" promptText="minimum 10,000,000 irr" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="90.0" layoutY="230.0" text="deposit duration" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="oneyearlong" layoutX="284.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="1 year" />
+            <Button fx:id="twoyearlong" layoutX="380.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="2 year" />
+            <Button fx:id="threeyearlong" layoutX="481.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="3 year" />
+            <Button fx:id="fiveyearlong" layoutX="583.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="5 year" />
+            <Label layoutX="90.0" layoutY="298.0" text="deposit interest rate(depends on deposite duration)" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="600.0" layoutY="287.0" prefHeight="40.0" prefWidth="64.0" styleClass="firstpage" stylesheets="@login.css">
+               <children>
+                  <Label fx:id="longinterest" layoutX="10.0" layoutY="12.0" text="x %">
+                     <font>
+                        <Font name="AzonixRegular" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="90.0" layoutY="357.0" text="deposit interest payment method" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="longonemonthinterest" layoutX="426.0" layoutY="352.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="1 month" />
+            <Button fx:id="longthreemonthinterest" layoutX="527.0" layoutY="352.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="3 month" />
+            <Button fx:id="longoneyearinterest" layoutX="632.0" layoutY="352.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text=" 1 year" />
+            <Hyperlink fx:id="longterms" layoutX="98.0" layoutY="525.0" text="TERMS AND CONDITIONS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <CheckBox fx:id="longaccept" layoutX="95.0" layoutY="561.0" mnemonicParsing="false" text="i accept all terms an conditions" textFill="#fffcfc">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="longdone" layoutX="344.0" layoutY="601.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="done" />
+            <Hyperlink fx:id="longearly" layoutX="98.0" layoutY="498.0" text="EARLY WITHDRAWAL TERMS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <CheckBox layoutX="90.0" layoutY="407.0" mnemonicParsing="false" text="automatic renewal" textFill="#fffcfc">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="back2" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" styleClass="loginbtn" stylesheets="@login.css" text="back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="foreigncurrency" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css">
+         <children>
+            <Label layoutX="188.0" layoutY="34.0" text="opening foreign currency deposit" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="158.0" text="deposit amount" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="foreignamount" layoutX="266.0" layoutY="147.0" prefHeight="40.0" prefWidth="320.0" promptText="minimum 100" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="90.0" layoutY="274.0" text="deposit duration" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="oneyearforeign" layoutX="263.0" layoutY="269.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="1 year" />
+            <Button fx:id="threeyearforeign" layoutX="354.0" layoutY="269.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="3 year" />
+            <Button fx:id="fiveyearforeign" layoutX="450.0" layoutY="269.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text=" 5 year" />
+            <Label layoutX="86.0" layoutY="324.0" text="deposit interest rate(depends on deposite duration and currency)" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="726.0" layoutY="313.0" prefHeight="40.0" prefWidth="64.0" styleClass="firstpage" stylesheets="@login.css">
+               <children>
+                  <Label fx:id="foreigninterest" layoutX="19.0" layoutY="12.0" text="x %">
+                     <font>
+                        <Font name="AzonixRegular" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="86.0" layoutY="374.0" text="deposit interest payment method" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="foreignonemonthinterest" layoutX="412.0" layoutY="369.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="1 month" />
+            <Button fx:id="foreignthreemonthinterest" layoutX="513.0" layoutY="369.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="3 month" />
+            <Button fx:id="foreignoneyearinterest" layoutX="622.0" layoutY="369.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text=" 1 year" />
+            <Hyperlink layoutX="92.0" layoutY="498.0" text="TERMS AND CONDITIONS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <CheckBox fx:id="foregnaccept" layoutX="95.0" layoutY="561.0" mnemonicParsing="false" text="i accept all terms an conditions" textFill="#fffcfc">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="foreigndone" layoutX="344.0" layoutY="601.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="done" />
+            <Hyperlink layoutX="93.0" layoutY="524.0" text="EARLY WITHDRAWAL TERMS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <CheckBox layoutX="88.0" layoutY="417.0" mnemonicParsing="false" text="automatic renewal" textFill="#fffcfc">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="90.0" layoutY="226.0" text="currency" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="dollar" layoutX="210.0" layoutY="221.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="dollar" />
+            <Button fx:id="euro" layoutX="313.0" layoutY="221.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="euro" />
+            <Button fx:id="back3" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" styleClass="loginbtn" stylesheets="@login.css" text="back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="interestfree" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <Label layoutX="212.0" layoutY="31.0" text="opening intrest free deposit" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="158.0" text="deposit amount" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="freeamount" layoutX="266.0" layoutY="147.0" prefHeight="40.0" prefWidth="320.0" promptText="minimum 10,000,000 irr" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="90.0" layoutY="230.0" text="deposit duration" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="oneyearfree" layoutX="284.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="1 year" />
+            <Button fx:id="twoyearfree" layoutX="380.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="2 year" />
+            <Button fx:id="threeyearfree" layoutX="481.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text="3 year" />
+            <Button fx:id="fiveyearfree" layoutX="583.0" layoutY="227.0" mnemonicParsing="false" styleClass="loginbtn" stylesheets="@login.css" text=" 5 year" />
+            <Label layoutX="90.0" layoutY="298.0" text="deposit interest rate(depends on deposite duration)" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="600.0" layoutY="287.0" prefHeight="40.0" prefWidth="64.0" styleClass="firstpage" stylesheets="@login.css">
+               <children>
+                  <Label fx:id="freeinterest" layoutX="22.0" layoutY="12.0" text="0%">
+                     <font>
+                        <Font name="AzonixRegular" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Hyperlink layoutX="93.0" layoutY="521.0" text="TERMS AND CONDITIONS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <CheckBox fx:id="freeaccept" layoutX="95.0" layoutY="561.0" mnemonicParsing="false" text="i accept all terms an conditions" textFill="#fffcfc">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="freedone" layoutX="344.0" layoutY="601.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="done" />
+            <Label layoutX="90.0" layoutY="460.0" text="purpose of this deposit is helping others or providing intrest free loans " textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="488.0" text="and the deposit intrest rate is 0 %" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="back4" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" styleClass="loginbtn" stylesheets="@login.css" text="back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="payment" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <Label layoutX="315.0" layoutY="39.0" text="internal transfer" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="374.0" layoutY="302.0" text="account number" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="sendotp" layoutX="471.0" layoutY="399.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="send otp" />
+            <Button fx:id="accback" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="back" />
+            <Button fx:id="donepayment" layoutX="358.0" layoutY="603.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="done" />
+            <Label layoutX="379.0" layoutY="195.0" text="deposit amount" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <TextFlow fx:id="card1" layoutX="324.0" layoutY="321.0" prefHeight="40.0" prefWidth="250.0" stylesheets="@login.css">
+               <styleClass>
+                  <String fx:value="styled-textflow" />
+                  <String fx:value="remaining-text" />
+                  <String fx:value="typed-text" />
+               </styleClass>
+            </TextFlow>
+            <TextField fx:id="card" alignment="TOP_LEFT" layoutX="324.0" layoutY="321.0" prefHeight="40.0" prefWidth="250.0" styleClass="transparent-textfield" stylesheets="@login.css" />
+            <TextField fx:id="getotp" alignment="CENTER" layoutX="324.0" layoutY="399.0" prefHeight="40.0" prefWidth="138.0" promptText="enter otp" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label fx:id="depositamount" alignment="CENTER" layoutX="323.0" layoutY="213.0" prefHeight="40.0" prefWidth="250.0" styleClass="logintextfield" stylesheets="@login.css" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,101 @@
+@import "../common.css";
+
+/* What only the manager app uses. */
+
+.loginbtnM1 {
+    -fx-background-color:linear-gradient(to bottom right, #a3b4c4,#b0b9c2);
+    -fx-background-radius:20px ;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+}
+
+.logintextfield2 {
+    -fx-background-color: #1f2f33;
+    -fx-border-color:  #1f2f33;
+    -fx-background-radius: 15px;
+    -fx-prompt-text-fill: #a3b4c4;
+    -fx-text-fill:#a3b4c4;
+    -fx-border-radius: 15px;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+}
+
+.checktextfield {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-family: "Calibri Light";
+}
+
+.uploadphotobtn {
+    fx-background-radius: 15px;
+    -fx-background-color:linear-gradient(to bottom right,#fff,#65b0f7);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    -fx-font-family: Azonix;
+}
+
+.uploadphotobtn:hover {
+    -fx-background-color:linear-gradient(to bottom right,#fff,#93c8fa);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Style for the text inside the TextFlow */
+.styled-textflow2 .text-content {
+    -fx-fill: #a3b4c4; /* Text color */
+}
+
+.logintextfieldM1 {
+    -fx-background-color: #1f2f33;
+    -fx-border-color: #1f2f33;
+    -fx-background-radius: 15px;
+    -fx-prompt-text-fill: #A3B4C4;
+    -fx-text-fill: #ffff;
+    -fx-border-radius: 15px;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    transition: transform 0.5s;
+}
+
+/* تغییر رنگ پس‌زمینه */
+.anchor-paneM {
+    -fx-background-color: #1f2f33;
+}
+
+/* تنظیم حاشیه */
+.anchor-paneM {
+    -fx-border-color: #a3b4c4;
+    -fx-border-width: 2;
+}
+
+/* تنظیم سایه */
+.anchor-paneM {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 5, 5);
+}
+
+/* تنظیم فاصله درونی */
+.anchor-paneM {
+    -fx-padding: 10;
+}
+
+.textfield2lM {
+    -fx-background-color: #1f2f33;
+    -fx-background-radius: 15px;
+    -fx-prompt-text-fill: #ffff;
+    -fx-text-fill: white;
+}
+
+.logintextfieldworker {
+    -fx-background-color: #a3b4c4;
+    -fx-border-color: #a3b4c4;
+    -fx-background-radius: 15px;
+    -fx-prompt-text-fill: #5e6e78;
+    -fx-text-fill: #1f2f33;
+    -fx-border-radius: 15px;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    transition: transform 0.5s;
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.customer.LoanApplicationController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css">
+         <children>
+            <Label layoutX="82.0" layoutY="34.0" text="1. Upload your documents" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="296.0" text="Term:" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="twoyear" layoutX="143.0" layoutY="330.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="2 years" />
+            <Button fx:id="oneyear" layoutX="57.0" layoutY="330.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="1 year" />
+            <Button fx:id="threeyear" layoutX="249.0" layoutY="330.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="3 years" />
+            <TextField fx:id="loadamount" layoutX="57.0" layoutY="235.0" prefHeight="40.0" prefWidth="354.0" promptText="Loan amount" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="58.0" layoutY="185.0" text="2. Loan amount and loan term" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="intrestrate" editable="false" layoutX="222.0" layoutY="397.0" prefHeight="40.0" prefWidth="54.0" promptText="Occupation" styleClass="logintextfield" stylesheets="@login.css" text="x %" />
+            <Button fx:id="done" layoutX="351.0" layoutY="620.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="Done" />
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" styleClass="donebtn" stylesheets="@login.css" text="Back" />
+            <Button fx:id="idupload" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="386.0" styleClass="uploadphotobtn" stylesheets="@login.css" text="Upload your ID or birth certificate">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="guarantorupload" layoutX="42.0" layoutY="129.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="385.0" styleClass="uploadphotobtn" stylesheets="@login.css" text="Upload your collateral and guarantor">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="fouryear" layoutX="355.0" layoutY="330.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="4 years" />
+            <Button fx:id="fiveyear" layoutX="460.0" layoutY="330.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="5 years" />
+            <Label layoutX="68.0" layoutY="389.0" prefHeight="18.0" prefWidth="54.0" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="408.0" text="Interest rate" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="492.0" layoutY="546.0" text="Signature" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Canvas fx:id="sign" height="407.0" layoutX="574.0" layoutY="285.0" width="326.0" />
+            <Label layoutX="274.0" layoutY="546.0" text="Date:" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="date" editable="false" layoutX="336.0" layoutY="535.0" prefHeight="40.0" prefWidth="130.0" styleClass="logintextfield" stylesheets="@login.css" />
+            <CheckBox fx:id="accept" layoutX="61.0" layoutY="488.0" mnemonicParsing="false" text="I accept terms and conditions" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="12.0" />
+               </font>
+            </CheckBox>
+            <Hyperlink fx:id="terms" layoutX="59.0" layoutY="459.0" text="Terms and conditions" />
+            <Button fx:id="eploymentupload" layoutX="443.0" layoutY="80.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="426.0" styleClass="uploadphotobtn" stylesheets="@login.css" text="Upload your employment documents">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="deedupload" layoutX="442.0" layoutY="129.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="426.0" styleClass="uploadphotobtn" stylesheets="@login.css" text="Upload property deed or lease agreement ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

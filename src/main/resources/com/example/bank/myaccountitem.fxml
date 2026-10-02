@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="accdetail" prefHeight="250.0" prefWidth="750.0" styleClass="firstpage" stylesheets="@login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.customer.AccountCard">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="account number :">
+         <font>
+            <Font name="AzonixRegular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="68.0" text="amount :">
+         <font>
+            <Font name="AzonixRegular" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="accamount" layoutX="138.0" layoutY="68.0" text="amount">
+         <font>
+            <Font name="AzonixRegular" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="accnum" layoutX="235.0" layoutY="14.0" text="account number">
+         <font>
+            <Font name="AzonixRegular" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="seedetail" layoutX="575.0" layoutY="196.0" mnemonicParsing="false" prefHeight="40.0" styleClass="menubtn" stylesheets="@login.css" text="check for details" textFill="#fffefe" />
+      <Label layoutX="14.0" layoutY="125.0" text="account type :">
+         <font>
+            <Font name="AzonixRegular" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="acctype" layoutX="219.0" layoutY="125.0" text="account type ">
+         <font>
+            <Font name="AzonixRegular" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="118.0" fitWidth="161.0" layoutX="575.0">
+         <image>
+            <Image url="@../../../bankimages/logo1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.customer.ProfileController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0" layoutX="1.0">
+               <image>
+                  <Image url="@../../../bankimages/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="366.0" layoutY="54.0" text="edit profile" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user" disable="true" layoutX="331.0" layoutY="125.0" prefHeight="40.0" prefWidth="257.0" promptText="username" styleClass="logintextfield" stylesheets="@login.css" />
+            <PasswordField fx:id="oldpass" layoutX="335.0" layoutY="184.0" prefHeight="40.0" prefWidth="250.0" promptText="password" styleClass="logintextfield" stylesheets="@login.css" />
+            <Button fx:id="submit" layoutX="383.0" layoutY="490.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" styleClass="donebtn" stylesheets="@login.css" text="submit" />
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="59.0" styleClass="donebtn" stylesheets="@login.css" text="back" />
+            <PasswordField fx:id="mewpass" layoutX="335.0" layoutY="350.0" prefHeight="40.0" prefWidth="250.0" promptText="enter newpassword" styleClass="logintextfield" stylesheets="@login.css" />
+            <PasswordField fx:id="newcom" layoutX="335.0" layoutY="408.0" prefHeight="40.0" prefWidth="250.0" promptText=" reenter new password" styleClass="logintextfield" stylesheets="@login.css" />
+            <Button fx:id="change" layoutX="383.0" layoutY="272.0" mnemonicParsing="false" prefHeight="40.0" styleClass="donebtn" stylesheets="@login.css" text="change password" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

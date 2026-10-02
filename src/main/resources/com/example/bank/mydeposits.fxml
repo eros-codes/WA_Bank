@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mydeposit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.customer.MyDepositsController">
+   <children>
+      <ScrollPane fx:id="scroldeposit" layoutX="20.0" layoutY="186.0" prefHeight="500.0" prefWidth="860.0" styleClass="scroll-bar" stylesheets="@login.css">
+         <content>
+            <VBox fx:id="seedeposits" prefHeight="619.0" prefWidth="854.0" spacing="20.0" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="366.0" layoutY="64.0" text="my DEPOSITS" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="adddeposit" layoutX="345.0" layoutY="111.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="228.0" styleClass="donebtn" stylesheets="@login.css" text="add a deposIt">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="78.0" styleClass="donebtn" stylesheets="@login.css" text="back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

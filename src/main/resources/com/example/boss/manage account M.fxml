@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.staff.ManageCustomerController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="900.0" style="-fx-background-color: #a3b4c4;">
+         <children>
+            <AnchorPane layoutX="50.0" layoutY="65.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;" styleClass="anchor-paneM" stylesheets="@login.css">
+               <children>
+                  <ImageView fitHeight="77.0" fitWidth="203.0" layoutX="361.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/5.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="183.0" layoutY="60.0" text="fullname :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fullnameacc" layoutX="331.0" layoutY="57.0" prefHeight="30.0" prefWidth="323.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="176.0" layoutY="144.0" prefHeight="24.0" prefWidth="142.0" text="username :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameacc" layoutX="331.0" layoutY="141.0" prefHeight="30.0" prefWidth="323.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="135.0" layoutY="184.0" prefHeight="12.0" prefWidth="184.0" text="nationility id :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="passwordacc" layoutX="329.0" layoutY="298.0" prefHeight="30.0" prefWidth="323.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="191.0" layoutY="222.0" prefHeight="24.0" prefWidth="136.0" text="address :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addressacc" layoutX="330.0" layoutY="219.0" prefHeight="30.0" prefWidth="323.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="231.0" layoutY="262.0" prefHeight="24.0" prefWidth="77.0" text="work :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="workaddressacc" layoutX="329.0" layoutY="470.0" prefHeight="30.0" prefWidth="323.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="173.0" layoutY="301.0" prefHeight="24.0" prefWidth="136.0" text="password :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="postalacc" layoutX="329.0" layoutY="341.0" prefHeight="30.0" prefWidth="323.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="207.0" layoutY="103.0" prefHeight="24.0" prefWidth="136.0" text="gender :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="435.0" layoutY="103.0" prefHeight="24.0" prefWidth="110.0" text="marital :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="117.0" layoutY="433.0" prefHeight="24.0" prefWidth="190.0" text="phone number :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="430.0" layoutY="262.0" prefHeight="24.0" prefWidth="94.0" text="income :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="125.0" layoutY="474.0" prefHeight="24.0" prefWidth="190.0" text="work address :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="128.0" layoutY="389.0" prefHeight="24.0" prefWidth="184.0" text="account type :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="146.0" layoutY="344.0" prefHeight="24.0" prefWidth="184.0" text="postal code :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="427.0" layoutY="389.0" prefHeight="24.0" prefWidth="78.0" text="email :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="genderacc" layoutX="331.0" layoutY="100.0" prefHeight="30.0" prefWidth="94.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="maritalacc" layoutX="546.0" layoutY="100.0" prefHeight="30.0" prefWidth="104.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="workacc" layoutX="330.0" layoutY="259.0" prefHeight="30.0" prefWidth="94.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="idacc" layoutX="331.0" layoutY="180.0" prefHeight="30.0" prefWidth="323.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="incomeacc" layoutX="527.0" layoutY="259.0" prefHeight="30.0" prefWidth="123.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="typeacc" layoutX="327.0" layoutY="386.0" prefHeight="30.0" prefWidth="94.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="emalacc" layoutX="508.0" layoutY="386.0" prefHeight="30.0" prefWidth="142.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="phoneacc" layoutX="329.0" layoutY="430.0" prefHeight="30.0" prefWidth="323.0" styleClass="logintextfield" stylesheets="@login.css">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="employerpromote" layoutX="97.0" layoutY="533.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="266.0" style="-fx-background-color: #1f2f33; -fx-background-radius: 40;" text="Promoted to employee" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="toban" layoutX="412.0" layoutY="533.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: #1f2f33; -fx-background-radius: 40;" text="to ban" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="saveacc" layoutX="577.0" layoutY="533.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: #1f2f33; -fx-background-radius: 40;" text="save" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="338.0" layoutY="19.0" text="manage account">
+               <font>
+                  <Font name="AzonixRegular" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="11.0" layoutY="12.0" mnemonicParsing="false" styleClass="menubtn" stylesheets="@login.css" text="back" textFill="#fffefe">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

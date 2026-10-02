@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.staff.TransactionsController">
+    <children>
+        <AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #a3b4c4;">
+            <children>
+                <Text layoutX="299.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="See Transactions">
+                    <font>
+                        <Font name="AzonixRegular" size="28.0"/>
+                    </font>
+                </Text>
+                <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false"
+                        prefHeight="28.0" prefWidth="60.0" styleClass="menubtn" stylesheets="@login.css"
+                        text="Back" textFill="WHITE">
+                    <font>
+                        <Font name="AzonixRegular" size="12.0"/>
+                    </font>
+                </Button>
+                <ComboBox fx:id="filter" layoutX="763.0" layoutY="15.0" prefHeight="26.0" prefWidth="122.0"
+                          styleClass="menubtn" stylesheets="@login.css"/>
+                <ScrollPane fx:id="scroll" fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER"
+                            vbarPolicy="AS_NEEDED" layoutY="80.0" prefHeight="600.0" prefWidth="900.0"
+                            styleClass="scroll-bar" stylesheets="@login.css">
+                    <content>
+                        <TilePane fx:id="tile" alignment="TOP_LEFT" hgap="30.0" vgap="30.0"
+                                  prefHeight="1500.0" prefWidth="899.0"/>
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

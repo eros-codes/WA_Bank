@@ -1,0 +1,256 @@
+/* Styles shared by all three apps (customer, employee, manager).
+   Each app's login.css imports this file and adds only what is its own. */
+
+.firstpage {
+    -fx-background-color:linear-gradient(to bottom right, #a3b4c4,#fff);
+    -fx-background-radius: 20px ;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+}
+
+.loginbtn {
+    -fx-background-color:linear-gradient(to bottom right, #a3b4c4,#b0b9c2);
+    -fx-background-radius:20px ;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+}
+
+.loginbtnselected {
+    -fx-background-color:linear-gradient(to bottom right, #4e5b69,#b0b9c2);
+    -fx-background-radius:20px ;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    transition: transform 0.5s;
+}
+
+.loginbtn:hover {
+    -fx-background-color:linear-gradient(to bottom right, #4e5b69,#b0b9c2);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.logintextfield {
+    -fx-background-color: #a3b4c4;
+    -fx-border-color: #a3b4c4;
+    -fx-background-radius: 15px;
+    -fx-prompt-text-fill: #5e6e78;
+    -fx-text-fill: #1f2f33;
+    -fx-border-radius: 15px;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    transition: transform 0.5s;
+}
+
+.logintextfield:hover {
+    -fx-border-color:#4e5b69 ;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.safetypin {
+    -fx-background-color:  #1f2f33;
+    -fx-border-color: #a3b4c4;
+    -fx-border-radius: 15px;
+}
+
+.safetybtn {
+    -fx-background-color:#4e5b69;
+    -fx-background-radius: 30px;
+}
+
+.menubtn {
+    -fx-font-family: Azonix;
+    -fx-background-radius: 20px;
+    -fx-background-color: #1f2f33 ;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    transition: transform 0.5s;
+}
+
+.menubtn:hover {
+    -fx-background-radius-color:#4e5b69 ;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.menubtnselected {
+    -fx-font-family: Azonix;
+    -fx-background-radius: 20px;
+    -fx-background-color: #1f2f33 ;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    -fx-background-radius-color:#4e5b69 ;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.anchorpane {
+    -fx-background-color:linear-gradient(to bottom right, #1f2f33,#4e5b69);
+}
+
+.anchorpane2 {
+    -fx-background-color:linear-gradient(to bottom right, #a3b4c4,#fff);
+}
+
+.donebtn {
+    -fx-background-color:linear-gradient(to bottom right, #f5f6f7,#b0b9c2);
+    -fx-background-radius:20px ;
+    -fx-font-family: Azonix;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    transition: transform 0.5s;
+}
+
+.donebtn:hover {
+    -fx-background-color:linear-gradient(to bottom right, #9d9fa1,#b0b9c2);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.anchorpane4 {
+    -fx-background-radius: 10px;
+    -fx-background-color:linear-gradient(to bottom right, #1f2f33,#4e5b69);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+}
+
+.logintextfield2:hover {
+    -fx-border-color:#4e5b69 ;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.whitepane {
+    fx-background-radius: 10px;
+    -fx-background-color:linear-gradient(to bottom right,#fff,#b0b9c2);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+}
+
+.line {
+    -fx-stroke-dash-array: 5 5;
+    -fx-stroke-width: 2;
+    -fx-stroke: black;
+}
+
+.transparent-textfield {
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+    -fx-caret-color: black;
+    -fx-font-size: 14px;
+    -fx-font-family: Azonix;
+}
+
+.scroll-bar:horizontal *.decrement-button {
+    visibility: hidden;
+}
+
+.scroll-bar:horizontal *.increment-button {
+    visibility: hidden;
+}
+
+.scroll-bar > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+    -fx-font-size: 5px;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #3A4452;
+    -fx-background-radius: 0;
+    -fx-font-size: 5px;
+}
+
+.scroll-bar:vertical *.decrement-arrow {
+    visibility: hidden;
+}
+
+.scroll-bar:vertical *.increment-arrow {
+    visibility: hidden;
+}
+
+.accordion {
+    -fx-background-color: #f0f4f8;
+    -fx-border-radius: 10px;
+    -fx-padding: 10px;
+    -fx-border-color: #c4d1e0;
+    -fx-border-width: 1px;
+}
+
+.titled-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 8px;
+    -fx-border-color: #d8dee9;
+    -fx-border-width: 1px;
+    -fx-text-fill: #2e3440;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0.1, 0, 2);
+}
+
+.titled-pane:hover {
+    -fx-background-color: #eef3f7;
+}
+
+.titled-pane > .title {
+    -fx-background-color: #dee7ef;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e2a38;
+}
+
+.titled-pane > .content {
+    -fx-background-color: #f9fcff;
+    -fx-padding: 12px;
+    -fx-border-color: #e0e6ed;
+    -fx-border-width: 1px 0 0 0;
+    -fx-font-size: 13px;
+}
+
+.accordionbtn {
+    fx-background-radius: 5px;
+    -fx-background-color:linear-gradient(to bottom right,#fff,#a3b4c4);
+    -fx-font-family: Azonix;
+    -fx-border-color:#2e3440;
+    -fx-border-with: 2px;
+}
+
+/* the text flows that suggest the customer's own card or account number */
+.styled-textflow {
+    -fx-background-color: #a3b4c4;
+    -fx-padding: 5;
+    -fx-border-color: #a3b4c4;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 5);
+    -fx-alignment: bottom-left;
+}
+
+.styled-textflow .typed-text {
+    -fx-fill: #1f2f33;
+}
+
+.styled-textflow .remaining-text {
+    -fx-fill: #5e6e78;
+}
+
+.styled-textflow2 {
+    -fx-background-color: #1f2f33;
+    -fx-border-color: #1f2f33;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 5);
+    -fx-padding: 5;
+}
+
+.styled-textflow2:hover {
+    -fx-border-color: #4e5b69;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.staff.StaffLoginController">
+   <children>
+      <AnchorPane layoutX="-661.0" layoutY="39.0" prefHeight="700.0" prefWidth="900.0">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../bankimages/aa.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="409.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+               <font>
+                  <Font name="AzonixRegular" size="30.0" />
+               </font></Text>
+            <TextField fx:id="username" layoutX="334.0" layoutY="244.0" prefHeight="40.0" prefWidth="250.0" promptText="user name" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="334.0" layoutY="303.0" prefHeight="40.0" prefWidth="250.0" promptText="password" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="safety" layoutX="334.0" layoutY="359.0" prefHeight="40.0" prefWidth="115.0" promptText="SAFETY PIN" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="refresh" layoutX="454.0" layoutY="360.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="41.0" styleClass="safetybtn" stylesheets="@login.css" />
+            <Button fx:id="enter" layoutX="378.0" layoutY="418.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="161.0" styleClass="donebtn" stylesheets="@login.css" text="enter" />
+            <Label fx:id="random" alignment="CENTER" layoutX="502.0" layoutY="360.0" prefHeight="38.0" prefWidth="74.0" styleClass="safetypin" stylesheets="@login.css" text="99999" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

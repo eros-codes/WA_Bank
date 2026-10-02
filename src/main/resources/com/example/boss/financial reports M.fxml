@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.staff.FinancialReportsController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #a3b4c4;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="6.0" prefHeight="687.0" prefWidth="259.0" styleClass="logintextfieldM1" stylesheets="@login.css">
+               <children>
+                  <ImageView fitHeight="126.0" fitWidth="119.0" layoutX="70.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/5.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="logout" layoutX="44.0" layoutY="133.0" mnemonicParsing="false" style="-fx-background-color: #1f2f33;" text="log out" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="48.0" fitWidth="37.0" layoutX="7.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/personal-25(2).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="13.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/876784(2).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="transactions" layoutX="44.0" layoutY="234.0" mnemonicParsing="false" style="-fx-background-color: #1f2f33;" text="transactions" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="51.0" fitWidth="37.0" layoutX="7.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/bill-10%20(1)(2).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="billpayments" layoutX="42.0" layoutY="290.0" mnemonicParsing="false" style="-fx-background-color: #1f2f33;" text="bill payments" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="37.0" fitWidth="50.0" layoutX="10.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/406846-200(2).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="loanrequests" layoutX="44.0" layoutY="350.0" mnemonicParsing="false" style="-fx-background-color: #1f2f33;" text="loan requests" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="48.0" fitWidth="37.0" layoutX="9.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/3171593(2).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="listofaccounts" layoutX="45.0" layoutY="415.0" mnemonicParsing="false" style="-fx-background-color: #1f2f33;" text="list of accounts" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="48.0" fitWidth="37.0" layoutX="9.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/1770915-200(2).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="financialreports" layoutX="42.0" layoutY="482.0" mnemonicParsing="false" style="-fx-background-color: #1f2f33;" text="financial reports" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="48.0" fitWidth="37.0" layoutX="7.0" layoutY="546.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/206437(2).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="changepassword" layoutX="38.0" layoutY="551.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="169.0" style="-fx-background-color: #1f2f33;" text="change password" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="13.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="14.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/tick-15(2).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="verifyaccount" layoutX="43.0" layoutY="183.0" mnemonicParsing="false" style="-fx-background-color: #1f2f33;" text="verify account" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="13.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="178.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Circle fill="#fa1212" layoutX="185.0" layoutY="192.0" radius="6.0" stroke="#fa1212" strokeType="INSIDE" visible="false" />
+                  <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="9.0" layoutY="608.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../bankimages/2207743(2).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="deposit" layoutX="44.0" layoutY="609.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #1f2f33;" text="desposit" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button layoutX="434.0" layoutY="15.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="290.0" style="-fx-background-color: transparent;" text="financial reports">
+               <font>
+                  <Font name="AzonixRegular" size="21.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="305.0" layoutY="220.0" prefHeight="259.0" prefWidth="547.0" styleClass="logintextfieldM1" stylesheets="@login.css">
+               <children>
+                  <Label layoutX="17.0" layoutY="28.0" prefHeight="28.0" prefWidth="346.0" text="-number of transactions :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="87.0" prefHeight="28.0" prefWidth="346.0" text="-number of loan requests :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="144.0" prefHeight="28.0" prefWidth="396.0" text="-funds entered into the system :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tansaction" alignment="CENTER" layoutX="411.0" layoutY="27.0" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #a3b4c4; -fx-background-radius: 40;">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="entered" alignment="CENTER" layoutX="411.0" layoutY="141.0" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #a3b4c4; -fx-background-radius: 40;">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="request" alignment="CENTER" layoutX="411.0" layoutY="85.0" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #a3b4c4; -fx-background-radius: 40;">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="14.0" layoutY="199.0" prefHeight="28.0" prefWidth="346.0" text="-number of bills paid :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bills" alignment="CENTER" layoutX="411.0" layoutY="197.0" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #a3b4c4; -fx-background-radius: 40;">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

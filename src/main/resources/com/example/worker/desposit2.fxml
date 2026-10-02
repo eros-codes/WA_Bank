@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="depositdetail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="250.0" styleClass="logintextfieldM1" stylesheets="@../boss/login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.staff.DepositCard">
+   <children>
+      <Label fx:id="fullname" alignment="CENTER" layoutX="15.0" layoutY="29.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="fullname" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="accountnum" alignment="CENTER" layoutX="16.0" layoutY="94.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="account id" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="depositduration" alignment="CENTER" layoutX="16.0" layoutY="289.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="desposit period" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="deposittype" alignment="CENTER" layoutX="15.0" layoutY="159.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="desposit type" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="depositamount" alignment="CENTER" layoutX="15.0" layoutY="224.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="desposit amount" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="depositpayment" alignment="CENTER" layoutX="15.0" layoutY="419.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="desposit payment" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="depositinterest" alignment="CENTER" layoutX="15.0" layoutY="354.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="desposit percentage" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="14.0" text="full name" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="78.0" text="account id" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="143.0" text="deposit type" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="206.0" text="deposit amount" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="271.0" text="deposit period" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="336.0" text="deposit percentage" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="401.0" text="deposit payment" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

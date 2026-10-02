@@ -1,0 +1,95 @@
+@import "../common.css";
+
+/* What only the customer app uses. */
+
+.logintextfield2 {
+    -fx-background-color: #1f2f33;
+    -fx-border-color:  #1f2f33;
+    -fx-background-radius: 15px;
+    -fx-prompt-text-fill: #a3b4c4;
+    -fx-text-fill:#f6f6f6;
+    -fx-border-radius: 15px;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+}
+
+.checktextfield {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-family: "Akira Expanded";
+}
+
+.uploadphotobtn {
+    fx-background-radius: 15px;
+    -fx-background-color:linear-gradient(to bottom right,#fff,#4e5b69);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    -fx-font-family: Azonix;
+}
+
+.uploadphotobtn:hover {
+    -fx-background-color:linear-gradient(to bottom right,#fff,#1f2f33);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.text2-content {
+    -fx-fill: #f6f6f6;
+}
+
+.remain2-content {
+    -fx-fill: #a3b4c4;
+}
+
+.styled-textflow2 .text-content {
+    -fx-fill: #a3b4c4;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 6 14;
+    -fx-font-family: 'Azonix';
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: white;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-family: 'Azonix';
+    -fx-text-fill: white;
+    -fx-padding: 6 10;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-family: 'Azonix';
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(255, 255,255,0.1);
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="accounts" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="250.0" styleClass="loginbtnM1" stylesheets="@login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.staff.CustomerRow">
+   <children>
+      <Label fx:id="accountfullname" alignment="CENTER" layoutX="15.0" layoutY="23.0" prefHeight="46.0" prefWidth="220.0" styleClass="logintextfieldM1" stylesheets="@login.css" text=" full name" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="accountusername" alignment="CENTER" layoutX="15.0" layoutY="95.0" prefHeight="46.0" prefWidth="220.0" styleClass="logintextfieldM1" stylesheets="@login.css" text="username" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="accountnationalid" alignment="CENTER" layoutX="15.0" layoutY="167.0" prefHeight="46.0" prefWidth="220.0" styleClass="logintextfieldM1" stylesheets="@login.css" text="nationality id" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="manage" layoutX="77.0" layoutY="239.0" mnemonicParsing="false" styleClass="menubtn" stylesheets="@login.css" text="manage" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="82.0" layoutY="5.0" text="full name">
+         <font>
+            <Font name="AzonixRegular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="77.0" text="user name">
+         <font>
+            <Font name="AzonixRegular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="149.0" text="id">
+         <font>
+            <Font name="AzonixRegular" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.customer.WriteChequeController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane2" stylesheets="@login.css">
+         <children>
+            <AnchorPane layoutX="50.0" layoutY="150.0" prefHeight="400.0" prefWidth="800.0" styleClass="whitepane" stylesheets="@login.css">
+               <children>
+                  <Label layoutX="115.0" layoutY="32.0" text="checkbook">
+                     <font>
+                        <Font name="Akira Expanded Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="496.0" layoutY="34.0" text=" issuer name :">
+                     <font>
+                        <Font name="Akira Expanded Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="issuename" layoutX="657.0" layoutY="34.0" text="name">
+                     <font>
+                        <Font name="Akira Expanded Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="124.0" text="check number :">
+                     <font>
+                        <Font name="Akira Expanded Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="389.0" layoutY="128.0" text="check amount:">
+                     <font>
+                        <Font name="Akira Expanded Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="192.0" text="recipient name :">
+                     <font>
+                        <Font name="Akira Expanded Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="389.0" layoutY="192.0" text="due date :">
+                     <font>
+                        <Font name="Akira Expanded Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="431.0" layoutY="328.0" text="signiture">
+                     <font>
+                        <Font name="Akira Expanded Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="342.0" text="date">
+                     <font>
+                        <Font name="Akira Expanded Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Canvas fx:id="sign" height="176.0" layoutX="533.0" layoutY="219.0" width="261.0" />
+                  <Line endX="90.80001831054688" layoutX="292.0" layoutY="139.0" startX="-82.00003051757812" styleClass="line" />
+                  <Line endX="90.80001831054688" layoutX="642.0" layoutY="142.0" startX="-82.00003051757812" styleClass="line" />
+                  <Line endX="90.80001831054688" layoutX="594.0" layoutY="207.0" startX="-82.00003051757812" styleClass="line" />
+                  <Line endX="90.80001831054688" layoutX="291.0" layoutY="208.0" startX="-82.00003051757812" styleClass="line" />
+                  <Line endX="90.80001831054688" layoutX="186.0" layoutY="357.0" startX="-82.00003051757812" styleClass="line" />
+                  <TextField fx:id="number" editable="false" layoutX="208.0" layoutY="120.0" prefHeight="24.0" prefWidth="175.0" styleClass="checktextfield" stylesheets="@login.css" />
+                  <TextField fx:id="amount" layoutX="556.0" layoutY="121.0" prefHeight="24.0" prefWidth="175.0" styleClass="checktextfield" stylesheets="@login.css" />
+                  <TextField fx:id="recipentname" layoutX="205.0" layoutY="187.0" prefHeight="24.0" prefWidth="175.0" styleClass="checktextfield" stylesheets="@login.css" />
+                  <TextField fx:id="duedate" layoutX="508.0" layoutY="187.0" prefHeight="24.0" prefWidth="175.0" styleClass="checktextfield" stylesheets="@login.css" />
+                  <TextField fx:id="date" editable="false" layoutX="103.0" layoutY="338.0" prefHeight="24.0" prefWidth="175.0" styleClass="checktextfield" stylesheets="@login.css" />
+                  <ImageView fitHeight="83.0" fitWidth="107.0">
+                     <image>
+                        <Image url="@../../../bankimages/logoblack.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="328.0" layoutY="60.0" text="check issuance">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="done" layoutX="350.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="done">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="backtochecks" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="78.0" styleClass="donebtn" stylesheets="@login.css" text="back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

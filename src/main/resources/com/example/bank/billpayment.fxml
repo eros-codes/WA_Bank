@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.customer.PaymentsController">
+   <children>
+      <AnchorPane fx:id="billpage" prefHeight="200.0" prefWidth="200.0" styleClass="anchorpane" stylesheets="@login.css">
+         <children>
+            <AnchorPane layoutX="288.0" layoutY="166.0" prefHeight="368.0" prefWidth="359.0" styleClass="anchorpane4" stylesheets="@login.css">
+               <children>
+                  <Button fx:id="ebill" layoutX="31.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" styleClass="loginbtn" stylesheets="@login.css" text="electricity bill" />
+                  <Button fx:id="gbill" layoutX="31.0" layoutY="89.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" styleClass="loginbtn" stylesheets="@login.css" text="gas bill" />
+                  <Button fx:id="wbill" layoutX="31.0" layoutY="165.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" styleClass="loginbtn" stylesheets="@login.css" text="water bill" />
+                  <Button fx:id="tbill" layoutX="31.0" layoutY="234.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" styleClass="loginbtn" stylesheets="@login.css" text="telephone bill" />
+                  <Button fx:id="ibill" layoutX="31.0" layoutY="309.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" styleClass="loginbtn" stylesheets="@login.css" text="internet bill" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="368.0" layoutY="84.0" text="bill payment" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="backtomain" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" styleClass="donebtn" stylesheets="@login.css" text="back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="billid" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <AnchorPane layoutX="56.0" layoutY="100.0" prefHeight="277.0" prefWidth="800.0" styleClass="whitepane" stylesheets="@login.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="15.0" text="BILL AMOUNT :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="72.0">
+                     <font>
+                        <Font name="AzonixRegular" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="billidnum" editable="false" layoutX="99.0" layoutY="67.0" prefHeight="40.0" prefWidth="200.0" styleClass="logintextfield2" stylesheets="@login.css" />
+                  <Label layoutX="14.0" layoutY="140.0">
+                     <font>
+                        <Font name="AzonixRegular" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="paymentidnum" editable="false" layoutX="167.0" layoutY="135.0" prefHeight="40.0" prefWidth="200.0" styleClass="logintextfield2" stylesheets="@login.css" />
+                  <TextField fx:id="dueyear" editable="false" layoutX="148.0" layoutY="204.0" prefHeight="40.0" prefWidth="130.0" styleClass="logintextfield2" stylesheets="@login.css" />
+                  <Label fx:id="billamount" layoutX="176.0" layoutY="15.0" text="LABEL">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="73.0" text="BILL ID :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="141.0" text="PAYMENT ID :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="210.0" text="DUE DATE :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="32.800048828125" endY="234.60000610351562" layoutX="636.0" layoutY="43.0" startX="32.800048828125" startY="-43.00000762939453" styleClass="line" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="billtype" layoutX="406.0" layoutY="50.0" text="type " textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="paythebill" layoutX="356.0" layoutY="473.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="PAY" />
+            <Button fx:id="backtobill" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" styleClass="donebtn" stylesheets="@login.css" text="BACK" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="billpayment" prefHeight="200.0" prefWidth="200.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <AnchorPane layoutX="50.0" layoutY="75.0" prefHeight="550.0" prefWidth="800.0" styleClass="firstpage" stylesheets="@login.css">
+               <children>
+                  <TextField fx:id="billmonth" layoutX="265.0" layoutY="188.0" prefHeight="40.0" prefWidth="73.0" promptText="month" styleClass="logintextfield2" stylesheets="@login.css" />
+                  <TextField fx:id="billyear" layoutX="171.0" layoutY="188.0" prefHeight="40.0" prefWidth="79.0" promptText="year" styleClass="logintextfield2" stylesheets="@login.css" />
+                  <PasswordField fx:id="billcvv" layoutX="604.0" layoutY="188.0" prefHeight="40.0" prefWidth="74.0" styleClass="logintextfield2" stylesheets="@login.css" />
+                  <Label layoutX="14.0" layoutY="196.0" text="EXPIRE DATE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="522.0" layoutY="196.0" text="CVV2">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="billgetotp" alignment="CENTER" layoutX="363.0" layoutY="315.0" prefHeight="40.0" prefWidth="74.0" promptText="otp" styleClass="logintextfield2" stylesheets="@login.css" />
+                  <Button fx:id="billsendotp" layoutX="313.0" layoutY="369.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" styleClass="menubtn" stylesheets="@login.css" text="SEND OTP" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="billtimer" layoutX="377.0" layoutY="423.0" text="2:00">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="paymentdone" layoutX="313.0" layoutY="476.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" styleClass="donebtn" stylesheets="@login.css" text="PAY" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="amountbill" alignment="CENTER" contentDisplay="CENTER" layoutX="344.0" layoutY="28.0" text="amount" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="AzonixRegular" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextFlow fx:id="billcard1" layoutX="250.0" layoutY="101.0" prefHeight="40.0" prefWidth="300.0" stylesheets="@login.css">
+                     <styleClass>
+                        <String fx:value="styled-textflow2" />
+                        <String fx:value="text2-content" />
+                        <String fx:value="remain2-content" />
+                     </styleClass>
+                  </TextFlow>
+                  <TextField fx:id="billcard" alignment="TOP_LEFT" layoutX="248.0" layoutY="98.0" prefHeight="40.0" prefWidth="300.0" styleClass="transparent-textfield" stylesheets="@login.css" />
+                  <Label fx:id="notacceptedbill" alignment="CENTER" contentDisplay="CENTER" layoutX="252.0" layoutY="78.0" text="Your card is not acceptble" textAlignment="CENTER" textFill="RED" visible="false">
+                     <font>
+                        <Font name="AzonixRegular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sendcodebill" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="295.0" text="code has been sent" textAlignment="CENTER" textFill="#188924" visible="false">
+                     <font>
+                        <Font name="AzonixRegular" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="351.0" layoutY="32.0" text="BILL PAYMENT" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="backtobillid" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="74.0" styleClass="donebtn" stylesheets="@login.css" text="BACK" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="billrecipe" prefHeight="200.0" prefWidth="200.0" styleClass="anchorpane2" stylesheets="@login.css" visible="false">
+         <children>
+            <AnchorPane fx:id="billrecip" layoutX="45.0" layoutY="141.0" prefHeight="277.0" prefWidth="800.0" styleClass="whitepane" stylesheets="@login.css">
+               <children>
+                  <Label layoutX="17.0" layoutY="59.0" text="BILL AMOUNT :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="72.0">
+                     <font>
+                        <Font name="AzonixRegular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="140.0">
+                     <font>
+                        <Font name="AzonixRegular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="brecamount" layoutX="176.0" layoutY="59.0" text="LABEL">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="111.0" text="BILL ID :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="170.0" text="PAYMENT ID :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="224.0" text="DUE DATE :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="32.800048828125" endY="234.60000610351562" layoutX="635.0" layoutY="43.0" startX="32.800048828125" startY="-43.00000762939453" styleClass="line" />
+                  <Label fx:id="brecbid" layoutX="101.0" layoutY="111.0" text="LABEL">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="brecpid" layoutX="161.0" layoutY="170.0" text="LABEL">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="brecduedate" layoutX="146.0" layoutY="224.0" text="LABEL">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="14.0" text="BILL TYPE:">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="brectype" layoutX="131.0" layoutY="14.0" text="LABEL">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="payed" layoutX="686.0" layoutY="224.0" text="PAYED" textFill="#009116" visible="false">
+                     <font>
+                        <Font name="Calibri Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="brecdate" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="672.0" layoutY="1.0" nodeOrientation="RIGHT_TO_LEFT" text="2024.12.30 12:59" textAlignment="RIGHT" textOverrun="CLIP">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="not" layoutX="672.0" layoutY="218.0" prefHeight="58.0" prefWidth="138.0" text="PAYMENT UNSUCCESFULL " textFill="#ff2516" visible="false" wrapText="true">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="brecprint" layoutX="343.0" layoutY="465.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="print">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="backtobills1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" styleClass="donebtn" stylesheets="@login.css" text="BACK">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="charge" prefHeight="200.0" prefWidth="200.0" styleClass="anchorpane2" stylesheets="@login.css" visible="false">
+         <children>
+            <Label layoutX="280.0" layoutY="39.0" text="PREPAID MOBILE TOP-UP">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="411.0" layoutY="225.0" prefHeight="80.0" prefWidth="80.0" styleClass="whitepane" stylesheets="@login.css">
+               <children>
+                  <ImageView fx:id="mci" fitHeight="30.0" fitWidth="79.0" layoutX="1.0" layoutY="25.0" visible="false">
+                     <image>
+                        <Image url="@../../../bankimages/نشان_همراه_اول.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="rightel" fitHeight="48.0" fitWidth="79.0" layoutX="2.0" layoutY="16.0" visible="false">
+                     <image>
+                        <Image url="@../../../bankimages/Rightel_logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="irancell" fitHeight="48.0" fitWidth="74.0" layoutX="4.0" layoutY="16.0" visible="false">
+                     <image>
+                        <Image url="@../../../bankimages/MTN_Irancell_Logo.svg.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <Label fx:id="operattor" alignment="CENTER" contentDisplay="CENTER" layoutX="213.0" layoutY="326.0" prefHeight="23.0" prefWidth="471.0">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phonenum" alignment="CENTER" layoutX="300.0" layoutY="160.0" prefHeight="40.0" prefWidth="300.0" promptText="09..." styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="295.0" layoutY="130.0" text="ENTER YOUR MOBILE NUMBER">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="chargepeyment" layoutX="300.0" layoutY="578.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" styleClass="donebtn" stylesheets="@login.css" text="NEXT" />
+            <Button fx:id="backtobillcharge" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="79.0" styleClass="donebtn" stylesheets="@login.css" text="BACK" />
+            <Label layoutX="286.0" layoutY="405.0" text="SELECT TOP-UP AMOUNT">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="r5" layoutX="182.0" layoutY="464.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="114.0" styleClass="menubtn" stylesheets="@login.css" text="50,000 IRR" textFill="WHITE" />
+            <Button fx:id="r10" layoutX="322.0" layoutY="464.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="114.0" styleClass="menubtn" stylesheets="@login.css" text="100,000 IRR" textFill="WHITE" />
+            <Button fx:id="r20" layoutX="462.0" layoutY="464.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="114.0" styleClass="menubtn" stylesheets="@login.css" text="200,000 IRR" textFill="WHITE" />
+            <Button fx:id="r50" layoutX="602.0" layoutY="464.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="114.0" styleClass="menubtn" stylesheets="@login.css" text="500,000 IRR" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="chargepayment" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane2" stylesheets="@login.css" visible="false">
+         <children>
+            <Label layoutX="385.0" layoutY="100.0" text="PAYMENT">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="50.0" layoutY="130.0" prefHeight="433.0" prefWidth="800.0" styleClass="anchorpane4" stylesheets="@login.css">
+               <children>
+                  <TextField fx:id="chargeyear" alignment="CENTER" layoutX="175.0" layoutY="151.0" prefHeight="40.0" prefWidth="74.0" promptText="YEAR" styleClass="logintextfield" stylesheets="@login.css" />
+                  <TextField fx:id="chargemonth" alignment="CENTER" layoutX="262.0" layoutY="151.0" prefHeight="40.0" prefWidth="74.0" promptText="MONTH" styleClass="logintextfield" stylesheets="@login.css" />
+                  <Label layoutX="22.0" layoutY="159.0" text="EXPIRE DATE" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="chargecvv" layoutX="651.0" layoutY="151.0" prefHeight="40.0" prefWidth="74.0" styleClass="logintextfield" stylesheets="@login.css" />
+                  <Label layoutX="573.0" layoutY="159.0" text="CVV2" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="chargeotp" alignment="CENTER" layoutX="361.0" layoutY="224.0" prefHeight="40.0" prefWidth="74.0" promptText="OTP" styleClass="logintextfield" stylesheets="@login.css" />
+                  <Button fx:id="chargesendotp" layoutX="343.0" layoutY="276.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="114.0" styleClass="menubtn" stylesheets="@login.css" text="SEND OTP" textFill="WHITE" />
+                  <Label fx:id="chargetimer" layoutX="377.0" layoutY="330.0" text="2:00" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="chargepay" layoutX="305.0" layoutY="380.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="PAY" textFill="WHITE" />
+                  <Label fx:id="chargeamount" alignment="CENTER" contentDisplay="CENTER" layoutX="343.0" layoutY="20.0" text="000000" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="notaccepted" alignment="CENTER" layoutX="271.0" layoutY="121.0" text="Your card is not acceptble" textAlignment="CENTER" textFill="#5b1a1a" visible="false">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextFlow fx:id="chargecard1" layoutX="249.0" layoutY="61.0" prefHeight="40.0" prefWidth="300.0" stylesheets="@login.css">
+                     <styleClass>
+                        <String fx:value="styled-textflow" />
+                        <String fx:value="remaining-text" />
+                        <String fx:value="typed-text" />
+                     </styleClass>
+                  </TextFlow>
+                  <TextField fx:id="chargecard" alignment="TOP_LEFT" layoutX="247.0" layoutY="58.0" prefHeight="40.0" prefWidth="300.0" styleClass="transparent-textfield" stylesheets="@login.css" />
+                  <Label fx:id="sendcode" alignment="CENTER" layoutX="305.0" layoutY="355.0" text="code has been sent" textAlignment="CENTER" textFill="#4fac5e" visible="false">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="backtocharge" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="79.0" styleClass="donebtn" stylesheets="@login.css" text="BACK" />
+            <ImageView fitHeight="93.0" fitWidth="139.0" layoutX="381.0" layoutY="8.0">
+               <image>
+                  <Image url="@../../../bankimages/logoblack.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="chargerecipe" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane2" stylesheets="@login.css" visible="false">
+         <children>
+            <AnchorPane fx:id="chargerecip" layoutX="200.0" layoutY="50.0" prefHeight="600.0" prefWidth="500.0" styleClass="whitepane" stylesheets="@login.css">
+               <children>
+                  <Line endX="182.0" endY="-7.62939453125E-6" layoutX="250.0" layoutY="59.0" startX="-181.19998168945312" startY="-7.62939453125E-6" styleClass="line" />
+                  <Line endX="186.0" endY="-6.103515625E-5" layoutX="250.0" layoutY="538.0" startX="-181.19998168945312" startY="-7.62939453125E-6" styleClass="line" />
+                  <Button fx:id="chrecprint" layoutX="157.0" layoutY="546.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="print" />
+                  <Label layoutX="67.0" layoutY="78.0" text="OPERATOR :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chrecoperator" layoutX="204.0" layoutY="78.0" text="OPERATOR ">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="68.0" layoutY="135.0" text="MOBILE NUMBER :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="217.0" layoutY="22.0" text="RECIPT">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chrecphnum" layoutX="262.0" layoutY="135.0" text="MOBILE NUMBER ">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="197.0" text="TOP-UP AMOUNT :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chrecamount" layoutX="261.0" layoutY="197.0" text="TOP-UP AMOUNT ">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="260.0" text="TAX : 9%">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="326.0" text="TRACTION NUMBER :">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chrecid" layoutX="287.0" layoutY="326.0" text="TRACTION NUMBER">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chargestatus" layoutX="188.0" layoutY="421.0" text="SUCCESSFUL" textFill="#06d422">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chargedate" layoutX="68.0" layoutY="511.0" prefHeight="28.0" prefWidth="300.0" text="RECIPT">
+                     <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="backtobills" layoutX="18.0" layoutY="20.0" mnemonicParsing="false" styleClass="donebtn" stylesheets="@login.css" text="BACK" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

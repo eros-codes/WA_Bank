@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bill" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="250.0" styleClass="loginbtnM1" stylesheets="@login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.staff.BillCard">
+   <children>
+      <Label fx:id="billtype" alignment="CENTER" layoutX="15.0" layoutY="33.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldM1" stylesheets="@login.css" text="bill type" textFill="#e4e4e4">
+         <font>
+            <Font name="AzonixRegular" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" alignment="CENTER" layoutX="15.0" layoutY="163.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldM1" stylesheets="@login.css" text="username" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="amount" alignment="CENTER" layoutX="15.0" layoutY="228.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldM1" stylesheets="@login.css" text="amount" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="paymentid" alignment="CENTER" layoutX="15.0" layoutY="293.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldM1" stylesheets="@login.css" text="payment id" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="fullname" alignment="CENTER" layoutX="15.0" layoutY="98.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldM1" stylesheets="@login.css" text="full name" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="14.0" text="bill type">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="80.0" text="full name">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="146.0" text="username">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="211.0" text="amount">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="276.0" text="payment id">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

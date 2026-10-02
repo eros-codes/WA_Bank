@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" stylesheets="" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.customer.WelcomeController">
+   <children>
+      <AnchorPane fx:id="start" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0">
+               <image>
+                  <Image url="@../../../bankimages/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="282.0" layoutY="53.0" text="WELCOME TO OUR BANK" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font></Label>
+            <Button fx:id="enteracc" layoutX="342.0" layoutY="159.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="enter to my account">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="182.0" layoutY="261.0" prefHeight="100.0" prefWidth="100.0" styleClass="firstpage" stylesheets="@login.css">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="94.0" layoutX="3.0">
+                     <image>
+                        <Image url="@../../../bankimages/carttocart.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane layoutX="292.0" layoutY="261.0" prefHeight="100.0" prefWidth="100.0" styleClass="firstpage" stylesheets="@login.css">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="94.0" layoutX="3.0" layoutY="5.0">
+                     <image>
+                        <Image url="@../../../bankimages/check.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane layoutX="508.0" layoutY="261.0" prefHeight="100.0" prefWidth="100.0" styleClass="firstpage" stylesheets="@login.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="98.0" layoutX="1.0" layoutY="10.0">
+                     <image>
+                        <Image url="@../../../bankimages/deposit.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane layoutX="618.0" layoutY="261.0" prefHeight="100.0" prefWidth="100.0" styleClass="firstpage" stylesheets="@login.css">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="87.0" layoutX="7.0" layoutY="4.0">
+                     <image>
+                        <Image url="@../../../bankimages/transfer.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane layoutX="400.0" layoutY="261.0" prefHeight="100.0" prefWidth="100.0" styleClass="firstpage" stylesheets="@login.css">
+               <children>
+                  <ImageView fitHeight="77.0" fitWidth="94.0" layoutX="4.0" layoutY="11.0">
+                     <image>
+                        <Image url="@../../../bankimages/creditcard.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginpage" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0" layoutX="-1.0" layoutY="-3.0">
+               <image>
+                  <Image url="@../../../bankimages/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="410.0" layoutY="80.0" text="login" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="loginuser" layoutX="326.0" layoutY="127.0" prefHeight="40.0" prefWidth="250.0" promptText="user name" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="505.0" layoutY="224.0" prefHeight="40.0" prefWidth="70.0" styleClass="safetypin" stylesheets="@login.css">
+               <children>
+                  <Label fx:id="pin" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="35.0" prefWidth="70.0" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Condensed Bold Italic" size="29.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="loginpin" layoutX="326.0" layoutY="224.0" prefHeight="40.0" prefWidth="120.0" promptText="SAFETY PIN" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="310.0" layoutY="532.0" text="don't have an account?" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="loginpass" layoutX="326.0" layoutY="176.0" prefHeight="40.0" prefWidth="250.0" promptText="password" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="resetpin" layoutX="453.0" layoutY="225.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="41.0" styleClass="safetybtn" stylesheets="@login.css" />
+            <Button fx:id="signup" layoutX="370.0" layoutY="572.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="165.0" styleClass="donebtn" stylesheets="@login.css" text="sign up" />
+            <Hyperlink fx:id="forgotpass" layoutX="333.0" layoutY="275.0" text="Did you forgot your password?" visible="false" />
+            <Button fx:id="login" layoutX="353.0" layoutY="330.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="enter" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signpage1" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0">
+               <image>
+                  <Image url="@../../../bankimages/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="32.0" text="fill this form" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="86.0" text="1. personal informations" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="140.0" />
+            <TextField fx:id="signyear" layoutX="534.0" layoutY="134.0" prefHeight="40.0" prefWidth="80.0" promptText="year" styleClass="logintextfield" stylesheets="@login.css" />
+            <TextField fx:id="signmonth" layoutX="632.0" layoutY="134.0" prefHeight="40.0" prefWidth="80.0" promptText="month" styleClass="logintextfield" stylesheets="@login.css" />
+            <TextField fx:id="signday" layoutX="729.0" layoutY="134.0" prefHeight="40.0" prefWidth="80.0" promptText="day" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="387.0" layoutY="148.0" text="date of birth" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="241.0" layoutY="224.0" text="gender" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="signmarried" layoutX="682.0" layoutY="213.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="married" />
+            <Button fx:id="signsingel" layoutX="779.0" layoutY="213.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="singel" />
+            <Label layoutX="534.0" layoutY="224.0" text="marital status" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="292.0" text="2. contact details" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="341.0" text="residential address" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="city" layoutX="74.0" layoutY="371.0" prefHeight="40.0" prefWidth="200.0" promptText="city" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="plate" layoutX="74.0" layoutY="450.0" prefHeight="40.0" prefWidth="200.0" promptText="plate" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="floor" layoutX="350.0" layoutY="450.0" prefHeight="40.0" prefWidth="200.0" promptText="floor" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="unit" layoutX="640.0" layoutY="450.0" prefHeight="40.0" prefWidth="200.0" promptText="unit" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="phonenum" layoutX="350.0" layoutY="529.0" prefHeight="40.0" prefWidth="200.0" promptText="phone number" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="mailingaddress" layoutX="74.0" layoutY="529.0" prefHeight="40.0" prefWidth="200.0" promptText="postal code" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="emailsign" layoutX="640.0" layoutY="529.0" prefHeight="40.0" prefWidth="200.0" promptText="email" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="next1" layoutX="350.0" layoutY="625.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="next" />
+            <Button fx:id="backtologin" layoutX="11.0" layoutY="8.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="53.0" styleClass="donebtn" stylesheets="@login.css" text="back" />
+            <Button fx:id="signfemale" layoutX="422.0" layoutY="213.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="loginbtn" stylesheets="@login.css" text="female" />
+            <Button fx:id="signmale" layoutX="314.0" layoutY="213.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="loginbtn" stylesheets="@login.css" text="male" />
+            <TextField fx:id="signnation" layoutX="74.0" layoutY="213.0" prefHeight="40.0" prefWidth="160.0" promptText="nationality" styleClass="logintextfield" stylesheets="@login.css" />
+            <TextField fx:id="signname" layoutX="74.0" layoutY="134.0" prefHeight="40.0" prefWidth="250.0" promptText="fullname" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="alley" layoutX="640.0" layoutY="371.0" prefHeight="40.0" prefWidth="200.0" promptText="alley" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="street" layoutX="350.0" layoutY="371.0" prefHeight="40.0" prefWidth="200.0" promptText="side street" styleClass="logintextfield" stylesheets="@login.css">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signpage2" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0" layoutX="1.0" layoutY="-3.0">
+               <image>
+                  <Image url="@../../../bankimages/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="58.0" layoutY="60.0" text="3. identification" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="145.0" text="type of id" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="nationalid" layoutX="169.0" layoutY="134.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="national id" />
+            <TextField fx:id="idnum" layoutX="430.0" layoutY="134.0" prefHeight="40.0" promptText="id number" styleClass="logintextfield" stylesheets="@login.css" />
+            <TextField fx:id="expireyear" disable="true" layoutX="551.0" layoutY="215.0" prefHeight="40.0" prefWidth="70.0" promptText="year" styleClass="logintextfield" stylesheets="@login.css" />
+            <TextField fx:id="expiremonth" disable="true" layoutX="632.0" layoutY="215.0" prefHeight="40.0" prefWidth="70.0" promptText="month" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="430.0" layoutY="226.0" text="expire date" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="226.0" text="issue date" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="issueyear" disable="true" layoutX="169.0" layoutY="215.0" prefHeight="40.0" prefWidth="70.0" promptText="year" styleClass="logintextfield" stylesheets="@login.css" />
+            <TextField fx:id="issuemonth" disable="true" layoutX="252.0" layoutY="215.0" prefHeight="40.0" prefWidth="70.0" promptText="month" styleClass="logintextfield" stylesheets="@login.css" />
+            <TextField fx:id="occupation" layoutX="59.0" layoutY="395.0" prefHeight="40.0" promptText="occupation" styleClass="logintextfield" stylesheets="@login.css" />
+            <TextField fx:id="employeradress" layoutX="58.0" layoutY="454.0" prefHeight="40.0" prefWidth="399.0" promptText="employer's address" styleClass="logintextfield" stylesheets="@login.css" />
+            <Button fx:id="next2" layoutX="351.0" layoutY="622.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="next" />
+            <Button fx:id="backtosignpage1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="53.0" styleClass="donebtn" stylesheets="@login.css" text="back">
+               <font>
+                  <Font name="AzonixRegular" size="12.0" />
+               </font></Button>
+            <TextField fx:id="annual" layoutX="256.0" layoutY="395.0" prefHeight="40.0" prefWidth="200.0" promptText="annual income" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="58.0" layoutY="347.0" text="4. employment information" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signpage3" prefHeight="200.0" prefWidth="200.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0">
+               <image>
+                  <Image url="@../../../bankimages/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="81.0" layoutY="86.0" text=" 5. account perferences" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="148.0" text="account type" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="saving" layoutX="237.0" layoutY="137.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="101.0" styleClass="loginbtn" stylesheets="@login.css" text="saving " />
+            <Button fx:id="checking" layoutX="349.0" layoutY="137.0" mnemonicParsing="false" prefHeight="40.0" styleClass="loginbtn" stylesheets="@login.css" text="checking" />
+            <Label layoutX="81.0" layoutY="223.0" text="initial deposit amount" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="285.0" text="overdraft protection" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="next3" layoutX="350.0" layoutY="624.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="next" />
+            <Button fx:id="backtosignpage2" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="66.0" styleClass="donebtn" stylesheets="@login.css" text="back" />
+            <RadioButton layoutX="81.0" layoutY="286.0" mnemonicParsing="false" />
+            <TextField fx:id="deposit" layoutX="311.0" layoutY="212.0" prefHeight="40.0" prefWidth="199.0" promptText="minimum 50,000" styleClass="logintextfield" stylesheets="@login.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signpage4" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0">
+               <image>
+                  <Image url="@../../../bankimages/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="68.0" layoutY="79.0" text="6. declarations and signitures" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="125.0" text="terms and conditions" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="terms" layoutX="330.0" layoutY="119.0" text="Read terms an conditions">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <CheckBox fx:id="acceptcheckbox" layoutX="68.0" layoutY="174.0" mnemonicParsing="false" text="i accept terms and conditions" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="68.0" layoutY="246.0" text="signiture:" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <Canvas fx:id="canvas" height="314.0" layoutX="52.0" layoutY="269.0" width="310.0" />
+            <Label layoutX="68.0" layoutY="623.0" text="date and time :" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dateandtime" editable="false" layoutX="263.0" layoutY="620.0" styleClass="logintextfield" stylesheets="@login.css" />
+            <Button fx:id="finished" layoutX="639.0" layoutY="615.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="204.0" styleClass="donebtn" stylesheets="@login.css" text="finished" />
+            <Button fx:id="backtosignpage3" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="66.0" styleClass="donebtn" stylesheets="@login.css" text="back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signdone" prefHeight="200.0" prefWidth="200.0" styleClass="anchorpane2" stylesheets="@login.css" visible="false">
+         <children>
+            <AnchorPane layoutX="81.0" layoutY="100.0" prefHeight="500.0" prefWidth="700.0" styleClass="anchorpane4" stylesheets="@login.css">
+               <children>
+                  <Label layoutX="36.0" layoutY="29.0" text="dear " textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="costumername" layoutX="117.0" layoutY="29.0" text="name" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="71.0" text="thank you for trusting to our bank" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="backtologin2" layoutX="297.0" layoutY="446.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="105.0" styleClass="donebtn" stylesheets="@login.css" text="done" />
+                  <Label layoutX="36.0" layoutY="148.0" text="your account's information:" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="200.0" layoutY="191.0" prefHeight="200.0" prefWidth="300.0" styleClass="firstpage" stylesheets="@login.css">
+                     <children>
+                        <Label fx:id="accountno" alignment="CENTER" layoutX="8.0" layoutY="92.0" prefHeight="14.0" prefWidth="283.0" text="card number">
+                           <font>
+                              <Font name="Akira Expanded Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="cvv2" layoutX="14.0" layoutY="171.0" prefHeight="14.0" prefWidth="54.0" text="cvv2">
+                           <font>
+                              <Font name="Akira Expanded Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="expired" layoutX="171.0" layoutY="171.0" prefHeight="14.0" prefWidth="118.0" text="expire date">
+                           <font>
+                              <Font name="Akira Expanded Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="iban" alignment="CENTER" layoutX="8.0" layoutY="112.0" prefHeight="14.0" prefWidth="282.0" text="iban">
+                           <font>
+                              <Font name="Akira Expanded Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="accountno1" alignment="CENTER" layoutX="8.0" layoutY="69.0" prefHeight="14.0" prefWidth="283.0" text="account number">
+                           <font>
+                              <Font name="Akira Expanded Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="91.0" fitWidth="102.0" layoutX="8.0">
+                           <image>
+                              <Image url="@../../../bankimages/logo1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="109.0" text="your username :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="usersign" layoutX="243.0" layoutY="109.0" text="label" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="403.0" layoutY="109.0" text="password :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passsign" layoutX="534.0" layoutY="109.0" text="label" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="97.0" layoutY="619.0" text="your debit card is going to reach you next week" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="497.0" layoutY="613.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="106.0" styleClass="donebtn" stylesheets="@login.css" text="traction" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="forgotpassnum" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0" layoutX="1.0">
+               <image>
+                  <Image url="@../../../bankimages/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="313.0" layoutY="54.0" text="forgot password" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="forgotnum" layoutX="349.0" layoutY="200.0" prefHeight="40.0" prefWidth="200.0" promptText="phone number" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="313.0" layoutY="253.0" text="enter the code you received" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="328.0" layoutY="172.0" text="enter your phone number" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="backtologin3" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" styleClass="donebtn" stylesheets="@login.css" text="back" />
+            <Label layoutX="252.0" layoutY="482.0" text="don't have access to your phone number?" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="forgetemail" layoutX="349.0" layoutY="540.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="continue with email" />
+            <Label layoutX="344.0" layoutY="94.0" text="enter your user name" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="forgotnum1" layoutX="347.0" layoutY="121.0" prefHeight="40.0" prefWidth="200.0" promptText="username" styleClass="logintextfield" stylesheets="@login.css" />
+            <Button fx:id="numcontinue" layoutX="350.0" layoutY="395.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="continue" />
+            <Button fx:id="sendcode" layoutX="431.0" layoutY="285.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" styleClass="donebtn" stylesheets="@login.css" text="send code" />
+            <TextField fx:id="numcode" layoutX="349.0" layoutY="285.0" prefHeight="40.0" prefWidth="77.0" promptText="code" styleClass="logintextfield" stylesheets="@login.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="forgotpassmail" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0">
+               <image>
+                  <Image url="@../../../bankimages/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="313.0" layoutY="54.0" text="forgot password" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="forgotmail1" layoutX="350.0" layoutY="229.0" prefHeight="40.0" prefWidth="200.0" promptText="email" styleClass="logintextfield" stylesheets="@login.css" />
+            <TextField fx:id="mailcode1" layoutX="350.0" layoutY="314.0" prefHeight="40.0" prefWidth="77.0" promptText="code" styleClass="logintextfield" stylesheets="@login.css" />
+            <Label layoutX="314.0" layoutY="281.0" text="enter the code you received" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="371.0" layoutY="193.0" text="enter your email" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="sendcode11" layoutX="431.0" layoutY="314.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" styleClass="donebtn" stylesheets="@login.css" text="send code" />
+            <Button fx:id="backtologin41" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" styleClass="donebtn" stylesheets="@login.css" text="back" />
+            <Label layoutX="350.0" layoutY="108.0" text="enter tour username" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="forgotmail11" layoutX="350.0" layoutY="144.0" prefHeight="40.0" prefWidth="200.0" promptText="username" styleClass="logintextfield" stylesheets="@login.css" />
+            <Button fx:id="mailcontinue1" layoutX="350.0" layoutY="440.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="continue" />
+            <AnchorPane fx:id="mainpage" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <ImageView fitHeight="700.0" fitWidth="900.0" layoutY="1.0" visible="false">
+                     <image>
+                        <Image url="@../../../bankimages/aa.jpg" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="220.0" layoutY="281.0" prefHeight="140.0" prefWidth="140.0" styleClass="firstpage" stylesheets="@login.css" />
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" styleClass="menubtn" stylesheets="@login.css" text="menu" textFill="#faf9f9">
+                     <font>
+                        <Font name="AzonixRegular" size="14.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutY="1.0" prefHeight="700.0" prefWidth="221.0" styleClass="firstpage" stylesheets="@login.css" visible="false">
+                     <children>
+                        <VBox layoutY="186.0" prefHeight="500.0" prefWidth="221.0">
+                           <children>
+                              <Accordion />
+                              <Accordion>
+                                <panes>
+                                  <TitledPane animated="false" prefHeight="132.0" prefWidth="222.0" text="untitled 1">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="102.0" prefWidth="220.0">
+                                             <children>
+                                                <Button layoutY="1.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                                <Button layoutY="55.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </TitledPane>
+                                  <TitledPane animated="false" text="untitled 2">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="322.0" prefWidth="220.0">
+                                             <children>
+                                                <Button layoutX="-1.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                                <Button layoutX="-1.0" layoutY="54.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                                <Button layoutX="-1.0" layoutY="108.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                                <Button layoutX="-1.0" layoutY="162.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                                <Button layoutX="-1.0" layoutY="216.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                                <Button layoutX="-1.0" layoutY="270.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </TitledPane>
+                                  <TitledPane animated="false" prefWidth="222.0" text="untitled 3">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="164.0" prefWidth="220.0">
+                                             <children>
+                                                <Button layoutX="-1.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                                <Button layoutX="-1.0" layoutY="54.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                                <Button layoutX="-1.0" layoutY="108.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </TitledPane>
+                                </panes>
+                              </Accordion>
+                              <Accordion>
+                                <panes>
+                                  <TitledPane animated="false" text="untitled 1">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </TitledPane>
+                                  <TitledPane animated="false" text="untitled 2">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </TitledPane>
+                                  <TitledPane animated="false" text="untitled 3">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </TitledPane>
+                                </panes>
+                              </Accordion>
+                           </children>
+                        </VBox>
+                        <Button layoutY="131.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="221.0" text="Button" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="380.0" layoutY="281.0" prefHeight="140.0" prefWidth="140.0" styleClass="firstpage" stylesheets="@login.css" />
+                  <AnchorPane layoutX="543.0" layoutY="281.0" prefHeight="140.0" prefWidth="140.0" styleClass="firstpage" stylesheets="@login.css" />
+                  <AnchorPane layoutX="222.0" layoutY="445.0" prefHeight="140.0" prefWidth="140.0" styleClass="firstpage" stylesheets="@login.css" />
+                  <AnchorPane layoutX="380.0" layoutY="445.0" prefHeight="140.0" prefWidth="140.0" styleClass="firstpage" stylesheets="@login.css" />
+                  <AnchorPane layoutX="543.0" layoutY="445.0" prefHeight="140.0" prefWidth="140.0" styleClass="firstpage" stylesheets="@login.css" />
+                  <Button fx:id="cardtran" layoutX="240.0" layoutY="194.0" mnemonicParsing="false" text="kart be kart" />
+                  <Button fx:id="shabatran" layoutX="352.0" layoutY="194.0" mnemonicParsing="false" text="shaba be shaba" />
+                  <Button fx:id="logout" layoutX="824.0" layoutY="29.0" mnemonicParsing="false" text="log out" />
+                  <Button fx:id="bills" layoutX="471.0" layoutY="194.0" mnemonicParsing="false" text="bills" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="newpassset" prefHeight="200.0" prefWidth="200.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="900.0" layoutX="3.0" layoutY="2.0">
+               <image>
+                  <Image url="@../../../bankimages/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="304.0" layoutY="75.0" text="set new password" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="newpass" layoutX="313.0" layoutY="167.0" prefHeight="40.0" prefWidth="274.0" promptText="enter your new password" styleClass="logintextfield" stylesheets="@login.css" />
+            <Button fx:id="backtologin5" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="66.0" styleClass="donebtn" stylesheets="@login.css" text="back" />
+            <PasswordField fx:id="compass" layoutX="313.0" layoutY="261.0" prefHeight="40.0" prefWidth="274.0" promptText="enter your password again" styleClass="logintextfield" stylesheets="@login.css" />
+            <Button fx:id="setpass" layoutX="350.0" layoutY="454.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="donebtn" stylesheets="@login.css" text="set password" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

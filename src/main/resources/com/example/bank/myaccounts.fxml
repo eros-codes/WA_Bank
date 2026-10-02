@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="account" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.customer.MyAccountsController">
+   <children>
+      <AnchorPane fx:id="acc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane" stylesheets="@login.css" visible="false">
+         <children>
+            <ScrollPane fx:id="scrolacc" layoutX="30.0" layoutY="196.0" prefHeight="500.0" prefWidth="860.0" styleClass="scroll-bar" stylesheets="@login.css">
+               <content>
+                  <VBox fx:id="seeacc" prefHeight="619.0" prefWidth="854.0" spacing="20.0" />
+               </content>
+            </ScrollPane>
+            <Label layoutX="335.0" layoutY="87.0" text="my accounts" textFill="WHITE">
+               <font>
+                  <Font name="AzonixRegular" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="34.0" layoutY="34.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="78.0" styleClass="donebtn" stylesheets="@login.css" text="back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="add" layoutX="382.0" layoutY="131.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="155.0" styleClass="donebtn" stylesheets="@login.css" text="add account">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="detail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" styleClass="anchorpane2" stylesheets="@login.css">
+         <children>
+            <AnchorPane layoutX="50.0" layoutY="97.0" prefHeight="434.0" prefWidth="800.0" styleClass="anchorpane4" stylesheets="@login.css">
+               <children>
+                  <Label layoutX="21.0" layoutY="25.0" text="account number :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="accnumber" layoutX="247.0" layoutY="25.0" text="account number" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="88.0" prefHeight="23.0" prefWidth="225.0" text=" account amount :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="accamount" layoutX="237.0" layoutY="88.0" text="account amount" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="126.0" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="148.0" text="account type :" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="acctype" layoutX="227.0" layoutY="148.0" text="account type" textFill="WHITE">
+                     <font>
+                        <Font name="AzonixRegular" size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="241.0" layoutY="208.0" prefHeight="200.0" prefWidth="300.0" styleClass="firstpage" stylesheets="@login.css">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../bankimages/bankcardd.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="cardnum" alignment="CENTER" layoutX="8.0" layoutY="92.0" prefHeight="14.0" prefWidth="283.0" text="card number" textFill="WHITE">
+                           <font>
+                              <Font name="Akira Expanded Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="cvv2" layoutX="14.0" layoutY="171.0" prefHeight="14.0" prefWidth="54.0" text="cvv2" textFill="WHITE">
+                           <font>
+                              <Font name="Akira Expanded Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="expired" layoutX="171.0" layoutY="171.0" prefHeight="14.0" prefWidth="118.0" text="expire date" textFill="WHITE">
+                           <font>
+                              <Font name="Akira Expanded Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="iban" alignment="CENTER" layoutX="8.0" layoutY="112.0" prefHeight="14.0" prefWidth="282.0" text="iban" textFill="WHITE">
+                           <font>
+                              <Font name="Akira Expanded Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="91.0" fitWidth="102.0" layoutX="8.0">
+                           <image>
+                              <Image url="@../../../bankimages/logo1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Label layoutX="366.0" layoutY="37.0" text="my account">
+               <font>
+                  <Font name="AzonixRegular" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="closeaccount" layoutX="307.0" layoutY="558.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" styleClass="menubtn" stylesheets="@login.css" text="close account" textFill="WHITE" />
+            <Button fx:id="backtoacc" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="55.0" styleClass="menubtn" stylesheets="@login.css" text="back" textFill="WHITE" />
+            <CheckBox fx:id="accept" layoutX="299.0" layoutY="651.0" mnemonicParsing="false" text="I ACCEPT TERMS AND CONDITIONS">
+               <font>
+                  <Font name="AzonixRegular" size="14.0" />
+               </font>
+            </CheckBox>
+            <Hyperlink layoutX="376.0" layoutY="619.0" text="TERMS AND CONDITIONS" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

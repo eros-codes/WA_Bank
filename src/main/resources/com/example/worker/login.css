@@ -1,0 +1,166 @@
+@import "../common.css";
+
+/* What only the employee app uses. */
+
+.logintextfieldworker {
+    -fx-background-color: #a3b4c4;
+    -fx-border-color: #a3b4c4;
+    -fx-background-radius: 15px;
+    -fx-prompt-text-fill: #5e6e78;
+    -fx-text-fill: #1f2f33;
+    -fx-border-radius: 15px;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    transition: transform 0.5s;
+}
+
+.logintextfield2 {
+    -fx-background-color: #1f2f33;
+    -fx-border-color:  #1f2f33;
+    -fx-background-radius: 15px;
+    -fx-prompt-text-fill: #a3b4c4;
+    -fx-text-fill:#f6f6f6;
+    -fx-border-radius: 15px;
+    -fx-font-family: Azonix;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+}
+
+.checktextfield {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-family: "Akira Expanded";
+}
+
+.uploadphotobtn {
+    fx-background-radius: 15px;
+    -fx-background-color:linear-gradient(to bottom right,#fff,#4e5b69);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5 , 0 , 5);
+    -fx-font-family: Azonix;
+}
+
+.uploadphotobtn:hover {
+    -fx-background-color:linear-gradient(to bottom right,#fff,#1f2f33);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.text2-content {
+    -fx-fill: #f6f6f6;
+}
+
+.remain2-content {
+    -fx-fill: #a3b4c4;
+}
+
+.styled-textflow2 .text-content {
+    -fx-fill: #a3b4c4;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 6 14;
+    -fx-font-family: 'Azonix';
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: white;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-family: 'Azonix';
+    -fx-text-fill: white;
+    -fx-padding: 6 10;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-family: 'Azonix';
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(255, 255,255,0.1);
+}
+
+.my-table {
+    -fx-background-color: #1f2f33; /* پس‌زمینه کلی */
+    -fx-table-cell-border-color: transparent;
+    -fx-control-inner-background: #1f2f33; /* پس‌زمینه داخلی جدول */
+}
+
+.my-table .table-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+/* ردیف‌ها در حالت عادی و انتخاب شده */
+.my-table .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+.my-table .table-row-cell:filled:selected,
+.my-table .table-row-cell:filled:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* هدر ستون‌ها با border-radius */
+.my-table .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.my-table .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 4px 6px;
+}
+
+.my-table .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* اسکرول‌بار عمودی سبک خطی */
+.my-table .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 6px;
+}
+
+.my-table .scroll-bar:vertical .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 3px;
+}
+
+.my-table .scroll-bar .increment-button,
+.my-table .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}

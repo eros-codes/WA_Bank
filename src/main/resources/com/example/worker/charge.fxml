@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="charge" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="250.0" styleClass="logintextfieldM1" stylesheets="@../boss/login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.staff.TopUpCard">
+   <children>
+      <Label fx:id="username" alignment="CENTER" layoutX="16.0" layoutY="32.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="user name" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="phonenumber" alignment="CENTER" layoutX="16.0" layoutY="162.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="phone number" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="chargeamount" alignment="CENTER" layoutX="16.0" layoutY="227.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="charge amount" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="paymentid" alignment="CENTER" layoutX="15.0" layoutY="292.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="payment id" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="fullname" alignment="CENTER" layoutX="16.0" layoutY="97.0" prefHeight="39.0" prefWidth="220.0" styleClass="logintextfieldworker" stylesheets="@../boss/login.css" text="full name" textFill="WHITE">
+         <font>
+            <Font name="AzonixRegular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="14.0" text="username" textFill="WHITE" />
+      <Label layoutX="82.0" layoutY="78.0" text="fullname" textFill="WHITE" />
+      <Label layoutX="61.0" layoutY="143.0" prefHeight="0.0" prefWidth="127.0" text="phone number" textFill="WHITE" />
+      <Label layoutX="56.0" layoutY="208.0" text="charge amount" textFill="WHITE" />
+      <Label layoutX="77.0" layoutY="273.0" text="payment id" textFill="WHITE" />
+   </children>
+</AnchorPane>
